@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: radial-gradient(circle at top left, #0f2027, #203a43);
+padding: 10px 10px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #232441;
+    padding: 10px;
+    width: 420px;
+    border-radius: 15px;
+    height: 320px;
+    transition: all 2s ease;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+}
+
+.wrapper:hover{
+    box-shadow: 0 0 25px #0ff0fc;
+}
+
+.wrapper h1{
+    text-align: center ;
+    font-size: 50px;
+    color: white;
+}
+
+.wrapper .input-box{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.input-box input{
+    border-radius: 10px ;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    background: rgb(38, 40, 79);
+    transition: all 4s ease;
+    border: none;
+    color: aliceblue;
+}
+
+.input-box input:hover{
+    box-shadow: 0 0 25px white;
+}
+
+
+.wrapper .btn{
+    border: none;
+    margin-left: 80px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: crosshair;
+    color: white;
+    background: #0d0d0d;
+    font-size: 25px;
+    transition: all 1s ease;
+    
+}
+
+.btn:hover{
+    box-shadow: 0 0 15px white;
+}
+
+
+
+</style>
+</html>
